@@ -14,7 +14,7 @@ RUN pip install \
                 google-api-core[grpc] \
                 libcst==0.3.23 \
                 googleapis-common-protos>=1.55.0 \
-                proto-plus >= 1.19.7 \
+                proto-plus>=1.19.7 \
                 quart \
                 pynacl \
                 hypercorn
