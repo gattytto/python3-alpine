@@ -18,6 +18,7 @@ RUN pip install \
                 quart \
                 pynacl \
                 hypercorn
+RUN pip list
 RUN apk add --no-cache \
                 gcc \
                 libffi-dev \
