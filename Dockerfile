@@ -1,19 +1,19 @@
-FROM docker.io/amd64/python:3.10.6-alpine
+FROM docker.io/amd64/python:3.10.10-alpine
 #3.12-rc-alpine3.17
 ENV CARGO_BUILD_JOBS=2
 
 #RUN apk add build-base \
             #linux-headers
-            
+
 RUN pip install --upgrade pip
 
 RUN pip install \
+                grpcio==1.52.0 \
                 solana \
                 base58 \
                 kubernetes \
                 requests \
                 debugpy \
-                grpcio \
                 grpcio-reflection \
                 protobuf \
                 grpcio-health-checking \
@@ -32,4 +32,3 @@ RUN apk add --no-cache \
                 openssl-dev
 
 RUN pip list
-
