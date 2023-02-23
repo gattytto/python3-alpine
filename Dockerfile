@@ -1,4 +1,4 @@
-FROM docker.io/amd64/python:3.10.10-alpine
+FROM docker.io/amd64/python:3.10.6-alpine3.16
 #3.12-rc-alpine3.17
 ENV CARGO_BUILD_JOBS=2
 
