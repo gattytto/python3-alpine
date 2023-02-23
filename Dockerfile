@@ -1,9 +1,9 @@
-FROM docker.io/amd64/python:3.12-rc-alpine3.17
-
+FROM docker.io/amd64/python:3.10.6-alpine
+#3.12-rc-alpine3.17
 ENV CARGO_BUILD_JOBS=2
 
-RUN apk add build-base \
-            linux-headers
+#RUN apk add build-base \
+            #linux-headers
             
 RUN pip install --upgrade pip
 
