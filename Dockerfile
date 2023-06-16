@@ -9,6 +9,7 @@ RUN pip install --upgrade pip
 
 RUN pip install \
                 grpcio==1.52.0 \
+                boto3 \
                 solana \
                 base58 \
                 kubernetes \
