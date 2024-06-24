@@ -1,4 +1,4 @@
-FROM docker.io/amd64/python:3.10.6-alpine3.16
+FROM docker.io/amd64/python:3.10.14-alpine3.20
 #3.12-rc-alpine3.17
 ENV CARGO_BUILD_JOBS=2
 
@@ -30,6 +30,8 @@ RUN apk add --no-cache \
                 gcc \
                 libffi-dev \
                 musl-dev \
-                openssl-dev
+                openssl-dev \
+                aws-cli \
+                jq
 
 RUN pip list
